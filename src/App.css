@@ -1,0 +1,112 @@
+.App {
+  text-align: center;
+  background-color: #f0f0f0; /* Light gray background */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #09d3ac;
+}
+.node {
+  width: 20px;
+  height: 20px;
+  border-radius: 5px; /* Rounded corners */
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+  color: #333;
+  transition: transform 0.2s ease-in-out; /* Smooth transformation for hover effect */
+}
+
+.node:hover {
+  transform: scale(1.1); /* Slightly enlarge nodes on hover for interactivity */
+  z-index: 1; /* Ensure nodes are above others on hover */
+}
+
+
+
+
+.visualize-button {
+  background-color: #007bff; /* Primary blue color */
+  color: white; /* White text for contrast */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px 20px; /* Some padding for larger click area */
+  font-size: 16px; /* Larger font size */
+  cursor: pointer; /* Change cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  margin: 10px; /* Margin around the button */
+}
+
+.visualize-button:hover {
+  background-color: #0056b3; /* Darker shade of blue on hover */
+}
+
+.visualize-button:active {
+  background-color: #004085; /* Even darker shade when pressed */
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.visualize-button {
+  /* Existing styles */
+  animation: none; /* Reset any existing animations */
+}
+
+.visualize-button:hover {
+  animation: pulse 1s infinite; /* Apply the pulse animation on hover */
+}
+/* State-specific styles remain the same */
+
+.app-subheading {
+  text-align: center;
+  color: #007bff; /* Matching the button color for consistency */
+  font-size: 20px; /* Adjust based on preference */
+  margin-top: 20px; /* Existing top margin */
+  margin-bottom: 10px; /* Reduce bottom margin */
+  font-weight: normal; /* Or bold, depending on your preference */
+  opacity: 0.8; /* Slightly transparent for subtlety */
+}
+
+.app-subheading:hover {
+  opacity: 1; /* Fully opaque on hover for interactivity */
+  cursor: default; /* Indicates it's not clickable */
+}
